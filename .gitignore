@@ -1,0 +1,115 @@
+###################
+# Python 项目专用 #
+###################
+
+# Python 缓存文件（解释器自动生成）
+__pycache__/     # Python 编译后的字节码缓存目录
+*.py[cod]        # 编译后的 Python 文件（.pyc, .pyo, .pyd）
+.python-version  # Python 版本管理工具（如 pyenv）的版本文件
+*.pyc            # Python 编译字节码文件
+*.pyo            # Python 优化编译文件
+*.pyd            # Windows 平台的 Python 动态链接库
+.pytest_cache/   # pytest 测试框架缓存目录
+mypy_cache/      # mypy 静态类型检查缓存
+*.sqlite
+
+###################
+#  环境配置文件 #
+###################
+.env
+
+##################
+# 虚拟环境相关 #
+##################
+
+.venv/            # Python 虚拟环境目录（主流工具默认）
+venv/             # 虚拟环境常用名称
+env/              # 虚拟环境常用名称
+env.bak/          # 备份的虚拟环境目录
+env.test/         # 测试专用的虚拟环境
+
+#############
+# UV 工具相关 #
+#############
+
+.uv/             # UV 的缓存和配置目录
+.uvw/            # UV 的工作目录（如果有）
+.uv-state.json   # UV 状态文件
+uv_state.json    # UV 状态文件
+
+###################
+# 构建和分发相关 #
+###################
+
+build/           # 构建过程生成的临时文件
+dist/            # 打包后的分发文件
+wheels/          # 编译的二进制包（wheel 文件）
+*.egg-info/      # 项目元数据目录
+*.egg            # 旧版 Python 包格式
+*.whl            # Python wheel 包
+pip-wheel-metadata/  # pip 编译元数据
+sdist/           # 源代码分发包
+
+###################
+# 包管理相关文件 #
+###################
+
+Pipfile           # pipenv 包管理文件
+Pipfile.lock      # pipenv 锁文件
+poetry.lock       # poetry 锁文件
+pyproject.toml.lock  # 锁文件（如果使用）
+requirements*.txt # requirements 依赖文件（各种变体）
+setup.cfg         # 打包配置（通常不应忽略）
+MANIFEST          # 包含文件列表
+
+###################
+# 测试和覆盖率相关 #
+###################
+
+.coverage         # coverage 覆盖率报告
+.coverage.*       # 覆盖率临时文件
+htmlcov/          # 生成的 HTML 覆盖率报告
+.tox/             # tox 测试环境目录
+.pytest_cache/    # pytest 缓存（单独列出以明确）
+test-results.xml  # 通用测试结果文件
+junit*.xml        # JUnit 格式测试报告
+cover/            # 额外的覆盖率输出目录
+
+#################
+# IDE 和编辑器 #
+#################
+
+.vscode/          # VS Code 编辑器配置
+.idea/            # JetBrains 系列 IDE 配置
+*.sublime-workspace # Sublime Text 工作区文件
+*.swp             # Vim 交换文件
+*.swo             # Vim 交换文件
+*~                # 临时备份文件
+.DS_Store         # macOS 目录元数据文件
+.ropeproject      # Rope Python 重构库配置
+.idea
+idea/
+
+###################
+# 日志和临时文件 #
+###################
+
+*.log             # 所有日志文件
+logs/             # 日志目录
+npm-debug.log*    # Node.js 调试日志（如果项目混合使用）
+*.tmp             # 临时文件
+*.bak             # 备份文件
+*~                # 编辑器备份文件
+
+############
+# 笔记本 #
+############
+
+.ipynb_checkpoints/ # Jupyter notebook 检查点
+
+####################
+# 操作系统特定文件 #
+####################
+
+Thumbs.db         # Windows 缩略图缓存
+desktop.ini       # Windows 目录自定义设置

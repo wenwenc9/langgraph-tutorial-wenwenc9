@@ -1,0 +1,6 @@
+# Step 1：
+uv add nbconvert pandoc
+
+# Step 2：
+jupyter nbconvert Demo.ipynb --to markdown
+
