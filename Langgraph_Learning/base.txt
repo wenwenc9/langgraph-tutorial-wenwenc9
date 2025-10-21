@@ -1,0 +1,2 @@
+from IPython.display import Image, display
+display(Image(graph.get_graph(xray=True).draw_mermaid_png()))  # 可能会超时，需要开启代理
