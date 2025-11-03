@@ -1,0 +1,5 @@
+from langchain.chat_models import init_chat_model
+llm = init_chat_model(model=f"openai:{modelName}")
+
+from langchain_openai import ChatOpenAI
+llm = ChatOpenAI(model=modelName)
