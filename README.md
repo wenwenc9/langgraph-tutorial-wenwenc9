@@ -1,9 +1,9 @@
 
-# 一、本套代码说明
+# 一、项目说明
 
 ![img.png](static/img.png)
 
-配合博客文章讲解，点击专栏，langgraph
+配合博客文章讲解，点击专栏，langgraph，跟着系列文章运行响应代码即可
 https://blog.csdn.net/weixin_44238683
 
 
