@@ -28,3 +28,5 @@ uv venv --python=3.13
 ```bash
 uv  sync  -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
+
+5、复制[.env.example](.env.example)为.evn并且配置key为你自己的
