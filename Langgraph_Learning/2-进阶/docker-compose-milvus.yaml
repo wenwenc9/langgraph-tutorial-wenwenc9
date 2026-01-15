@@ -72,7 +72,8 @@ services:
       MILVUS_USERNAME: root
       MILVUS_PASSWORD: Milvus123456-123456789
     ports:
-      - "8000:3000"
+#      - "8000:3000"
+      - "8777:3000" # 修正为本地端口，CSDN博客为8000
     depends_on:
       - milvus
     networks:

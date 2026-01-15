@@ -1,0 +1,4 @@
+**Langgraph系列文章**
+[01｜Langgraph | 从入门到实战 | 基础篇](https://blog.csdn.net/weixin_44238683/article/details/153200305)
+[02｜Langgraph | 从入门到实战 | workflow与Agent](https://blog.csdn.net/weixin_44238683/article/details/154188541)
+[03｜Langgraph | 从入门到实战 | 进阶篇 | 持久化](https://blog.csdn.net/weixin_44238683/article/details/154648157)
