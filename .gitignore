@@ -13,6 +13,12 @@ __pycache__/     # Python 编译后的字节码缓存目录
 mypy_cache/      # mypy 静态类型检查缓存
 *.sqlite
 
+# 忽略所有 SQLite 数据库文件
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+
 ###################
 #  环境配置文件 #
 ###################
