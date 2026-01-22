@@ -119,3 +119,6 @@ npm-debug.log*    # Node.js 调试日志（如果项目混合使用）
 
 Thumbs.db         # Windows 缩略图缓存
 desktop.ini       # Windows 目录自定义设置
+
+*.deepagents
+*.deepagents/

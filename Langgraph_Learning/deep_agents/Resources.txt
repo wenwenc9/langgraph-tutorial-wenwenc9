@@ -1,0 +1,14 @@
+
+langchian官方博客
+https://www.blog.langchain.com/using-skills-with-deep-agents/
+视频：https://www.youtube.com/watch?v=IVts6ztrkFg
+ppt：https://docs.google.com/presentation/d/10RyhGsScWhfqKk4PbYOljPiotoa8xcWNw9pAujJ0sAc
+
+视频讲述了Deep Agents（深度智能体）的定义、核心特征、相关工具包，以及其与LangChain、LangGraph的区别和Deep Agents的具体产品发布情况等内容，具体如下：
+- **Deep Agents定义及背景**：Deep Agents指能处理复杂、耗时任务的智能体，任务长度约每七个月翻倍，像Claude Code、Deep Research、Manis等都是典型例子，Manis平均任务最多含50次不同工具调用，这类智能体需应对深度、高难度且耗时久的工作，故用“深度”形容。
+- **Deep Agents核心工具特点**：像Manis、Claude Code这类智能体不依赖大量不同工具，而是聚焦少量“原子工具”，如文件系统访问（含文件操作工具）、bash或shell工具（执行脚本），还具备规划能力（Claude Code有规划工具，Manis也有规划概念）和子智能体委托机制（为特定任务生成子智能体，独立上下文窗口处理任务后反馈给父智能体，节省父智能体上下文窗口），同时提示词作用关键，如Claude Code的系统提示词公开且内容长而全面。
+- **Deep Agents工具包介绍**：因上述通用工具实用，被整合进Deep Agents工具包，该工具包完全开源，可用于构建多种类型智能体，是基于LangChain和LangGraph的带有倾向性的智能体框架，内置规划、子智能体委托、文件系统操作、bash及通用代码执行等特定工具，并搭配倾向性提示词指导工具使用。
+- **Deep Agents与LangChain、LangGraph的区别**：LangGraph提供核心智能体运行时环境，含 checkpointing、内存、人机交互支持等底层基础设施；LangChain提供通用抽象，如访问聊天模型、定义工具；Deep Agents则是基于二者构建的倾向性智能体框架，有预定义工具和提示词，可灵活适配多种智能体使用场景，且LangGraph抽象简单（如节点和边）、层级低，能构建不同智能体和工作流，LangChain通用抽象可构建多种智能体，Deep Agents是特定框架。
+- **Deep Agents相关工作原则**：一是将应用复杂度融入提示词，智能体依赖少量高效原子工具，搭配复杂精细提示词指导工具使用，如Claude Code工具少于20个但系统提示词详尽；二是充分利用文件系统，既可分担语言模型上下文窗口压力（如Manis写下计划后续调用），又能存储智能体可用脚本（如结合“Claude Skills”，智能体借bash工具调用文件系统中不同技能脚本），且子智能体委托很实用，可处理token密集型任务并隔离上下文。
+- **Deep Agents产品发布**：发布Deep Agents CLI（命令行界面），可在本地机器运行，类似Claude Code，能访问本地文件系统，支持技能和内存功能；发布Deep Agents 0.2版本，提供可插拔后端，支持本地文件系统（不再仅用LangGraph状态对象的虚拟文件系统），还有中间件（如上下文压缩，消息列表过长时总结；作为文件系统工具和子智能体工具的工具处理器；支持提示词缓存，节省延迟和成本），且CLI还附带内存技能、shell工具、网页获取工具等实用功能，所有产品均开源，鼓励贡献和反馈。
+- **Deep Agents工具包核心构成与定制性**：Deep Agents工具包基于LangChain和LangGraph，整合了Manis、Claude Code等智能体常用的原子工具（子智能体访问、文件系统使用、shell工具、规划工具），并内置这些工具，同时支持定制，可添加自定义指令或工具，且支持MCP。

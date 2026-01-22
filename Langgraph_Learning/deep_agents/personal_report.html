@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人信息汇总报告</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 15px;
+        }
+        .avatar {
+            font-size: 3em;
+            margin-right: 15px;
+        }
+        .name {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #333;
+        }
+        .info-row {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        .info-label {
+            font-weight: bold;
+            color: #667eea;
+            min-width: 80px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+        .skill-tag {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+        }
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>👥 个人信息汇总报告</h1>
+        
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-header">
+                    <div class="avatar">👨‍💻</div>
+                    <div class="name">张伟</div>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">年龄：</span>
+                    <span>28岁</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">性别：</span>
+                    <span>男</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">城市：</span>
+                    <span>北京</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">职位：</span>
+                    <span>软件工程师</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">公司：</span>
+                    <span>字节跳动</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">薪资：</span>
+                    <span>35K</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">教育背景：</span>
+                    <span>清华大学 计算机科学硕士</span>
+                </div>
+                <div class="skills">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Docker</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">兴趣爱好：</span>
+                    <span>编程、篮球、阅读</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">项目经验：</span>
+                    <span>电商平台、数据分析系统、AI 聊天机器人</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>报告生成时间：2024-12-14</p>
+        </div>
+    </div>
+</body>
+</html>
