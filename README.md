@@ -13,6 +13,7 @@ https://blog.csdn.net/weixin_44238683
 - [03｜Langgraph | 从入门到实战 | 进阶篇 | 持久化](https://blog.csdn.net/weixin_44238683/article/details/154648157)
 - [04｜Langgraph | 从入门到实战 | 进阶篇 | 流式传输](https://blog.csdn.net/weixin_44238683/article/details/156984982)
 - [05｜Langgraph | 从入门到实战 | 进阶篇 | 中断interrupt](https://blog.csdn.net/weixin_44238683/article/details/157176498)
+- [06｜Langgraph | 从入门到实战 | 进阶篇 | 时间旅行 time travel](https://blog.csdn.net/weixin_44238683/article/details/157028421)
 
 **langchain的系列文章（相信我把Langchain全部学一遍，你能深入理解AI的开发）**
 - [01｜LangChain | 从入门到实战-介绍](https://blog.csdn.net/weixin_44238683/article/details/134217850)
